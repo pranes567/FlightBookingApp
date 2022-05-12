@@ -1,0 +1,208 @@
+{
+  "ReRoutes": [
+    {
+
+      "DownstreamPathTemplate": "/api/Airline/Inventory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "23363"
+        }
+      ],
+      "UpstreamPathTemplate": "/Airline/Inventory",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "SwaggerKey": "airlines"
+
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/Airline/bookflight",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "23363"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Airline/bookflight",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "SwaggerKey": "airlines"
+
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/Airline/SearchFlight",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "23363"
+        }
+      ],
+      "UpstreamPathTemplate": "/Airline/SearchFlight",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "airlines"
+
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/Airline/GetallFlight",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "23363"
+        }
+      ],
+      "UpstreamPathTemplate": "/Airline/GetallFlight",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "airlines"
+
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/Airline/Ticket{pnr}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "23363"
+        }
+      ],
+      "UpstreamPathTemplate": "/Airline/Ticket{pnr}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "airlines"
+
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/Airline/AllTicket",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "23363"
+        }
+      ],
+      "UpstreamPathTemplate": "/Airline/AllTicket",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "airlines"
+
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/Airline/Cancel",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "23363"
+        }
+      ],
+      "UpstreamPathTemplate": "/Airline/Cancel",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "SwaggerKey": "airlines"
+
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/Airline/AddDiscoundCoupon",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "23363"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Airline/AddDiscoundCoupon",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "SwaggerKey": "airlines"
+
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/Airline/GetDiscountCoupon",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "23363"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Airline/GetDiscountCoupon",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "airlines"
+
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/Airline/GetAllDiscountCoupon",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "23363"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Airline/GetAllDiscountCoupon",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "airlines"
+
+    },
+
+    {
+
+      "DownstreamPathTemplate": "/api/Registration/register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "57768"
+        }
+      ],
+      "UpstreamPathTemplate": "/Registration/register",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "SwaggerKey": "user"
+
+    },
+    {
+
+      "DownstreamPathTemplate": "/api/Registration/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "57768"
+        }
+      ],
+      "UpstreamPathTemplate": "/Registration/login",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "SwaggerKey": "user"
+
+    }
+
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "airlines",
+      "Config": [
+        {
+          "Name": "Airline API",
+          "Version": "v1",
+          "Url": "http://localhost:23363/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "user",
+      "Config": [
+        {
+          "Name": "User API",
+          "Version": "v1",
+          "Url": "http://localhost:57768/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

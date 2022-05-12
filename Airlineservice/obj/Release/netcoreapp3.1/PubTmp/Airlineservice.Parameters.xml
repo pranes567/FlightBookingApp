@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Airlineservice20220510115832" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\User\\source\\codePractice\\Airlineservice\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="Airlineservice.DataContext.AirlineContext" description="" value="Data Source=tcp:airlineservicedbserver.database.windows.net,1433;Initial Catalog=Airlineservice_db;User Id=pranes@airlineservicedbserver;Password=pass@word1" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\User\\source\\codePractice\\Airlineservice\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\Airlineservice\.DataContext\.AirlineContext\.sql$" />
+  </parameter>
+</parameters>
